@@ -36,7 +36,7 @@ export class App {
     */
 
     //TIPUS BASICS
-    nom: string = 'Angular';
+    /*nom: string = 'Angular';
     nom2: string = 'Laravel';
     versio : number = 20;
     actiu: boolean = true;
@@ -74,7 +74,7 @@ export class App {
         console.log(this.p1.toSting());
         console.log(this.p1.preuAmbIva());
         console.log(this.p1.toSting());
-    }
+    }*/
 
     //1. AFEGIU UN MÈTODE A LA CLASSE PRODUCTE descripcio() que retorni un string amb nom i preu
     //2. MÈTODE descompte() que retorni el preu amb un 10% de rebaixa
