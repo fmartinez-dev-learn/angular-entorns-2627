@@ -18,29 +18,33 @@ import { Perfil } from './components/perfil/perfil';
 export class App {
   protected readonly title = signal('angular-entorns-2627');
 
-/*  prod1 : Producte = {
+/*
+prod1 : Producte = {
     id: 1,
     nom: 'a',
     preu: 5,
-    disponible: true
+    estoc: 4,
+    categoria: 'Informatica'
   };
 
   prod2 : Producte = {
     id: 2,
     nom: 'b',
     preu: 6,
-    disponible: false
+    estoc: 3,
+    categoria: 'Mueble'
   };
 
   prod3 : Producte = {
     id: 3,
     nom: 'y',
     preu: 15,
-    disponible: true
+    estoc: 0,
+    categoria: 'alegria'
   };
 
   biblioteca : Producte[] = [this.prod1, this.prod2, this.prod3];
-
+/*
   p1 = new ProducteClass('Teclat', 89.99);
 
   constructor(){
@@ -56,7 +60,7 @@ export class App {
   constructor(){
   console.log(this.prod4.descompte());
   alert(this.prod4.descompte());
-  }*/
+  }
 
   p1 : pokemon = {id:1, nom: 'Charmander', tipus: 'Foc', atac: 12, hp: 36};
   p2 : pokemon = {id:2, nom: 'Squirtle', tipus: 'Aigua', atac: 16, hp: 28, estat: false};
@@ -77,9 +81,17 @@ export class App {
     console.log(this.a1.haAprobat());
     console.log(this.a2.presentar());
     console.log(this.a2.haAprobat());
-  }
+  }*/
 
 
+ciutats : string[] = ['Barcelona', 'Lleida', 'Girona', 'Tarragona'];
+
+productes: Producte[] = [
+  {id: 1, nom: 'Teclat', preu: 5, estoc: 4, categoria: 'Informatica'},
+  {id: 2, nom: 'Mesa', preu: 6, estoc: 3, categoria: 'Mueble'}
+];
+
+noms : string[] = ['Flavio', 'Luis', 'Augusto', 'Renan', 'Ronaldo'];
 
 
 }

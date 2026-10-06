@@ -1,10 +1,11 @@
 .perfil{
     border: 1px solid gray;
-    border-radius: 5%;
+    border-radius: 2%;
     display: inline-block;
     margin: 10px;
-    border-left: 4px solid navy;
+    border-left: 15px solid navy;
     background-color: lightgrey;
+    width: 100%;
 }
 
 h2{

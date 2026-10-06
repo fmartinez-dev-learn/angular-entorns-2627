@@ -11,4 +11,10 @@ export class Perfil {
   cognom : string = 'Tineo Dias'
   edat : number = 21;
   cicle : string = 'DAW2';
+
+  get nomComplet() : string{
+    return this.nom + " " + this.cognom; 
+  }
+
 }
+
