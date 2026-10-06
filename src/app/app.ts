@@ -56,14 +56,16 @@ export class App {
       id: 1, 
       nom : 'PC', 
       preu : 999,
-      disponible : true
+      estoc : 10,
+      categoria: 'informatica'
     };
 
     producte2: Producte = {
       id: 2,
       nom: 'Ivan',
       preu: 5,
-      disponible : false
+      estoc : 2,
+      categoria: 'jkshda'
     }
 
     productes: Producte[] = [this.producte, this.producte2]; 
@@ -74,14 +76,20 @@ export class App {
         console.log(this.p1.toSting());
         console.log(this.p1.preuAmbIva());
         console.log(this.p1.toSting());
-    }*/
+    }
 
     //1. AFEGIU UN MÈTODE A LA CLASSE PRODUCTE descripcio() que retorni un string amb nom i preu
     //2. MÈTODE descompte() que retorni el preu amb un 10% de rebaixa
     //3. creeu un nou producte i mostreu el descompte per consola
     //4. cerqueu la manera de mostrar el descompte amb un popup
   
+*/
+ciutats: string[] = ['Barcelona', 'Madrid', 'Girona', 'Tarragona'];
 
-
+productes: Producte [] = [
+  {id: 1, nom : 'teclat', preu : 89.99, estoc : 12, categoria: 'perifèrics'},
+  {id: 2, nom : 'monitor', preu : 350, estoc : 3, categoria: 'pantallezs'},
+  {id: 2, nom : 'monitor', preu : 350, estoc : 3, categoria: 'pantallezs'},
+];
     
 }

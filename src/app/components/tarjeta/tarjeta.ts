@@ -22,6 +22,14 @@ export class Tarjeta {
     categoria: 'Informàtica',
   };
 
+   producte2 : Producte = {
+    id: 2,
+    nom: 'Ordinador Gamer',
+    preu: 1099,
+    estoc: 2,
+    categoria: 'Informàtica',
+  };
+
   /* Getter --> és un tipus especial de propietat calculada. En lloc de guardar un valor, el CALCULA cada cop que s'accedeix.
   get nomDelGetter(): TipusRetorn {
     retrun calcul;
