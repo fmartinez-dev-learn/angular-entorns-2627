@@ -14,7 +14,25 @@
     <p class="categoria"> {{producte.categoria}} </p>
     <p class="preu"> {{ producte.preu }} € (+IVA): {{preuAmbIva}} €</p>
     <p> Estoc: {{producte.estoc }} unitats</p>
+@if (producte.estoc > 0) {
     <p> {{estatDisponibilitat}}</p>
+}  
+</div>
+
+
+<div class="tarjeta">
+    <h2> {{producteXif.nom}} </h2>
+    <p class="categoria"> {{producteXif.categoria}} </p>
+    <p class="preu"> {{ producteXif.preu }} € (+IVA): {{preuAmbIva}} €</p>
+    <p> Estoc: {{producteXif.estoc }} unitats</p>
+
+    <button (click) = "toggleDesc()">
+        {{ mostrarDesc ? 'TANCAR' : 'VEURE' }}
+    </button>
+
+    @if (mostrarDesc) {
+            <p> {{producteXif.descripcio}}</p>
+} 
 </div>
 
 
