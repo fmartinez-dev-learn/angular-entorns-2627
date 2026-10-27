@@ -5,10 +5,11 @@ import { Producte as ProducteClass } from './producte'; //Importem la classe PRO
 import { Tarjeta } from './components/tarjeta/tarjeta';
 import { Perfil } from './components/perfil/perfil';
 import { Info } from './components/info/info';
+import { Botiga } from './bindings/botiga/botiga';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Tarjeta, Perfil, Info],
+  imports: [RouterOutlet, Tarjeta, Perfil, Info, Botiga],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

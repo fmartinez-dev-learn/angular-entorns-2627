@@ -1,0 +1,46 @@
+<section class="botiga" [class.compacte] = "modeCompacte">
+    <h1> {{title}} </h1>
+
+    <div class="graella">
+        
+         <h1> [class.nom] = "unica condició" + [class.nom] = "expressió"</h1>
+        @for (p of productes; track p.id){
+            <img [src]="imatgeSegura(p)" [alt]="p.nom"/>
+            <article class="fitxa" [class.esgotat] = "p.estoc === 0" [class.destacat]="producteDestacat(p)">
+                <h2> {{ p.nom }}</h2>
+                <p class="preu"> {{p.preu}} €</p>
+                <button class="btn-compra" [disabled]=" !teEstoc(p) "> Afegir al carret </button>
+                <a [href] = "urlFitxa(p)" [title]="'Fitxa de ' + p.nom" > Veure fitxa producte</a>
+            </article>
+        }
+    </div>
+
+
+
+    <div class="graella">
+        <h1> [class] amb concatenació </h1>
+        @for (p of productes; track p.id){
+            <article [class]=" classesFitxa(p) ">
+                <h2> {{ p.nom }}</h2>
+                <p class="preu"> {{p.preu}} €</p>
+                <button class="btn-compra" [disabled]=" !teEstoc(p) "> Afegir al carret </button>
+            </article>
+        }
+
+    </div>
+
+    <div class="graella">
+        <h1> [style] estils inline calculats </h1>
+        @for (p of productes; track p.id){
+            <article [class]=" classesFitxa(p) ">
+                <h2> {{ p.nom }}</h2>
+                <p class="preu"
+                    [style.color]="p.preu>500 ? '#C00000' : 'blue'"> {{p.preu}} €</p>
+                <button class="btn-compra" [disabled]=" !teEstoc(p) "> Afegir al carret </button>
+            </article>
+        }
+
+    </div>
+
+
+</section>
