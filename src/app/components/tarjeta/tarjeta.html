@@ -1,20 +1,22 @@
-<!--Aquest fitxer conté la vista: estructura HTML i bindings {{}}-->
 
-<!--<div class="tarjeta">
-    <h2> {{nom}} </h2>
-    <p> Preu : {{preu}} €</p>
-    <p> Estoc: {{estoc}} unitats</p>
-    <p> Preu amb iva (21%): {{preu * 1.21}}</p> 
-    <p> {{estoc > 0 ? 'Disponible' : 'Esgotat'}}</p>
-    <p> Nom en majúscules: {{nom.toUpperCase()}}</p>
-</div>-->
+<article class="tarjeta" [class.confirmat]="afegitAlCarret">
 
-<div class="tarjeta">
-    <h2> {{producte.nom}} </h2>
-    <p class="categoria"> {{producte.categoria}} </p>
-    <p class="preu"> {{ producte.preu }} € (+IVA): {{preuAmbIva}} €</p>
-    <p> Estoc: {{producte.estoc }} unitats</p>
-    <p> {{estatDisponibilitat}}</p>
-</div>
+    <h2>{{producte.nom}}</h2>
 
+    <p class="categoria">{{producte.categoria}}</p>
 
+    <p class="preu">
+        {{producte.preu}} € (+IVA): {{preuAmbIva}} €
+    </p>
+
+    <p>Estoc: {{producte.estoc}} unitats</p>
+
+    <p>{{estatDisponibilitat}}</p>
+
+    <button
+        [disabled]="afegitAlCarret || !teEstoc"
+        (click)="afegir()">
+        Afegir al carret
+    </button>
+
+</article>
