@@ -8,19 +8,11 @@ import { ProducteLab, PRODUCTES_LAB } from '../producte-lab';
   styleUrl: './botiga.css',
 })
 export class Botiga {
+  cerca = '';
   title='Botiga de Bindings';
   productes :  ProducteLab[] = PRODUCTES_LAB;
   modeCompacte = false;
   carret: number[] =  [];
-  
-  /*creea un mètode per mostrar el que hi ha al carret */
-  mostrar(): string{
-    let resultado = '';
-    for(let id of this.carret){
-      resultado += id+ ' ';
-    }
-    return resultado;
-  }
 
   teEstoc(p: ProducteLab): boolean {
     return p.estoc > 0;
@@ -47,11 +39,32 @@ export class Botiga {
   }
 
   afegir(p: ProducteLab) : void {
-    if (this.teEstoc(p)){
+    if (this.teEstoc(p) && !this.alCarret(p)) {
       this.carret.push(p.id);
-      p.afegitAlCarret = true;
     }
   }
 
+  alCarret(p: ProducteLab): boolean {
+    return this.carret.includes(p.id);
+  }
 
+  treure(p: ProducteLab): void {
+    this.carret = this.carret.filter(id => id !== p.id);
+  }
+
+  get totalCarret(): number {
+    return this.productes
+    .filter(p => this.alCarret(p)) //es queda amb els productes que estan al carret
+    .reduce((total, p) => total + p.preu, 0); //reduce suma els seus preus començant per 0
+  }
+
+  onCerca(event: Event): void {
+    this.cerca = (event.target as HTMLInputElement).value;
+  }
+
+  get productesVisibles() : ProducteLab[] {
+    const text = this.cerca.trim().toLowerCase();
+    return this.productes
+    .filter(p => p.nom.toLowerCase().includes(text));
+  }
 }
