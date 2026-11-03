@@ -6,7 +6,32 @@
     color: green;
 }
 
+.graella{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.fitxa{
+    width: 240px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.imatge{
+    width: 100%;
+}
+
+.al-carret{
+    border: 2px solid #70ad47;
+    background: #f0fff0;
+}
+
 .compacte .fitxa{
-    width: 100px;
-    height: 100px;
+    width: 180px;
+}
+
+.compacte .imatge{
+    display: none;
 }
