@@ -7,6 +7,7 @@ export interface ProducteLab {
     estoc: number;
     categoria: string;
     imatgeURL: string;
+    afegitAlCarret: boolean;
 }
 
 export const PRODUCTES_LAB: ProducteLab[] = [
@@ -16,7 +17,8 @@ export const PRODUCTES_LAB: ProducteLab[] = [
         preu: 899,
         estoc: 3,
         categoria: 'Informatica',
-        imatgeURL: 'https://picsum.photos/200/300'
+        imatgeURL: 'https://picsum.photos/200/300',
+        afegitAlCarret: false
     },
     {
         id: 2,
@@ -24,7 +26,8 @@ export const PRODUCTES_LAB: ProducteLab[] = [
         preu: 24.9,
         estoc: 15,
         categoria: 'Periferics',
-        imatgeURL: 'https://picsum.photos/200/300'
+        imatgeURL: 'https://picsum.photos/200/300',
+        afegitAlCarret: false
     },
     {
         id: 3,
@@ -32,7 +35,8 @@ export const PRODUCTES_LAB: ProducteLab[] = [
         preu: 329,
         estoc: 0,
         categoria: 'Pantalles',
-        imatgeURL: 'https://picsum.photos/200/300'
+        imatgeURL: 'https://picsum.photos/200/300',
+        afegitAlCarret: false
     },
     {
         id: 4,
@@ -40,7 +44,8 @@ export const PRODUCTES_LAB: ProducteLab[] = [
         preu: 79,
         estoc: 8,
         categoria: 'Periferics',
-        imatgeURL: 'https://picsum.photos/200/300'
+        imatgeURL: 'https://picsum.photos/200/300',
+        afegitAlCarret: false
     },
     {
         id: 5,
@@ -48,6 +53,7 @@ export const PRODUCTES_LAB: ProducteLab[] = [
         preu: 45,
         estoc: 0,
         categoria: 'Periferics',
-        imatgeURL: 'https://picsum.photos/200/300'
+        imatgeURL: 'https://picsum.photos/200/300',
+        afegitAlCarret: false
     }
 ]

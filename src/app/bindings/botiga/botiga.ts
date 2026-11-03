@@ -49,6 +49,7 @@ export class Botiga {
   afegir(p: ProducteLab) : void {
     if (this.teEstoc(p)){
       this.carret.push(p.id);
+      p.afegitAlCarret = true;
     }
   }
 
