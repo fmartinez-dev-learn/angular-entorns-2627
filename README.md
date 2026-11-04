@@ -32,16 +32,15 @@ Cada sessió té una branca amb el codi fet en directe a classe:
 | `lc/05-control-flow-for` | @for i track |
 | `lc/06-control-flow-if` | @if i @else |
 | `lc/07-property-binding` | [ ] Property Binding |
-| `lc/08-event-binding` | ( ) Event Binding |
-| `lc/09-inputs-outputs` | input<>() i output<>() |
-| `lc/10-routes` | Routing bàsic |
-| `lc/11-routes-dinamiques` | Paràmetres de ruta + ngClass |
-| `lc/12-reactive-forms` | FormGroup i FormControl |
-| `lc/13-validadors` | Validators + missatges error |
-| `lc/14-services` | Services + inject() |
-| `lc/15-http-client` | HttpClient + observables |
-| `lc/16-rxjs-behaviorsubject` | BehaviorSubject + estat compartit |
-| `lc/17-jwt-guards` | JWT + HttpInterceptor + AuthGuard |
+| `lc/08-events-input-output` | ( ) Event Binding + @Input() i @Output() |
+| `lc/09-routes` | Routing bàsic |
+| `lc/10-routes-dinamiques` | Paràmetres de ruta + ngClass |
+| `lc/11-reactive-forms` | FormGroup i FormControl |
+| `lc/12-validadors` | Validators + missatges error |
+| `lc/13-services` | Services + inject() |
+| `lc/14-http-client` | HttpClient + observables |
+| `lc/15-rxjs-behaviorsubject` | BehaviorSubject + estat compartit |
+| `lc/16-jwt-guards` | JWT + HttpInterceptor + AuthGuard |
 
 > Si t'encalles en un repte, mira la branca de la sessió corresponent.
 
